@@ -1,0 +1,89 @@
+@import "base";
+
+/*#Top-Navigation-Bar*/
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid $base-color;
+  background-color: $base-color;
+  .nav-checkbox {
+    display: none;
+  }
+  .nav-toggle {
+    position: absolute;
+    cursor: pointer;
+    margin: 0rem 1rem;
+    right: 0;
+
+    svg {
+      fill: $font-color-light;
+    }
+    .menu {
+      margin-top: 1.6rem;
+    }
+    .close {
+      display: none;
+      margin-top: 1.6rem;
+    }
+  }
+}
+
+.nav-menu {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+  align-items: center;
+
+  li {
+    display: none;
+  }
+  li:first-child {
+    margin-right: auto;
+    display: block;
+  }
+  li:last-child {
+    padding-bottom: 1rem;
+  }
+  a {
+    color: $font-color-light;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 40px;
+    padding: 7px 10px;
+  }
+
+}
+
+#nav-checkbox:checked ~ ul.nav-menu li {
+  display: block;
+}
+
+#nav-checkbox:checked ~ label.nav-toggle .close {
+  display: block;
+}
+#nav-checkbox:checked ~ label.nav-toggle .menu {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  /*#Top-Navigation-Bar*/
+
+  nav .nav-toggle {
+    display: none;
+  }
+  .nav-menu {
+    flex-direction: row;
+    padding: 0 150px;
+  }
+  .nav-menu li {
+    display: block;
+  }
+  .nav-menu li:last-child {
+    padding-bottom: 0;
+  }
+
+}

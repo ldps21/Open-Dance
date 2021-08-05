@@ -1,0 +1,24 @@
+$base-color: #002a8f;
+$second-color: #ffffff;
+$third-color: #cf142b;
+$font-color-dark: #333;
+$font-color-light: #fff;
+$primary-font: "Lato", sans-serif;
+$secondary-font: "Maven Pro", sans-serif;
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: $primary-font;
+}
