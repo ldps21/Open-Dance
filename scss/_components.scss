@@ -1,12 +1,29 @@
 @import "base";
 
+/*#Buttons*/
+.button {
+  display: inline-block;
+  background: $third-color;
+  color: $font-color-light;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1em 2em;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px $shadows;
+  margin: 1em 0;
+  text-shadow: 0px 3px 5px $shadows;
+}
+
 /*#Top-Navigation-Bar*/
 .nav {
   position: fixed;
   top: 0;
   width: 100%;
   border-bottom: 1px solid $base-color;
+  box-shadow: 2px 2px 5px $shadows;
   background-color: $base-color;
+  //background-color: rgba($base-color, 0.6);
   .nav-checkbox {
     display: none;
   }
@@ -69,6 +86,36 @@
   display: none;
 }
 
+/*#Footer*/
+#footer {
+  width: 100%;
+  position: static;
+  bottom: 0;
+  margin-top: 1em;
+  padding-bottom: 0;
+  background-color: $base-color;
+  //background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  box-shadow: 0 -2px 5px $shadows;
+}
+
+#footer h2,
+#footer a {
+  padding: 10px;
+  margin: 0;
+  text-decoration: none;
+}
+#footer p {
+  padding: 0;
+  margin: 0;
+}
+#footer .sns-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 18px;
+}
+
 @media only screen and (min-width: 1024px) {
   /*#Top-Navigation-Bar*/
 
@@ -84,6 +131,18 @@
   }
   .nav-menu li:last-child {
     padding-bottom: 0;
+  }
+  /*#Footer*/
+  #footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 100px;
+  }
+
+  #footer .footer-logo {
+    width: 180px;
   }
 
 }
