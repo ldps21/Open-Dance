@@ -3,7 +3,7 @@ $second-color: #ffffff;
 $third-color: #cf142b;
 $font-color-dark: #333;
 $font-color-light: #fff;
-$shadows:#000;
+$shadows: #000;
 $primary-font: "Lato", sans-serif;
 $secondary-font: "Maven Pro", sans-serif;
 
@@ -20,12 +20,22 @@ $secondary-font: "Maven Pro", sans-serif;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   font-family: $primary-font;
+  color: $font-color-dark;
   text-align: center;
 }
 img {
   display: block;
   width: 100%;
   height: auto;
+}
+.section-title {
+  h1 {
+    padding-top: 20px;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+  }
 }
