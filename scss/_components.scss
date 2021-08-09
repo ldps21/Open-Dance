@@ -1,26 +1,31 @@
-@import "base";
 
 /*#Buttons*/
 .button {
   display: inline-block;
-  background: $third-color;
+  background: rgba($third-color, $alpha: 1.0);
   color: $font-color-light;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: "Maven Pro", sans-serif;
   font-weight: bold;
-  padding: 1em 2em;
+  font-size: 20px;
+  padding: 1em 1.5em;
+  border: 0.5px solid $font-color-dark;
   border-radius: 10px;
   box-shadow: 2px 2px 8px $shadows;
   margin: 1em 0;
   text-shadow: 0px 3px 5px $shadows;
 }
+.button:hover{
+  background: rgba($base-color, $alpha: 1.0);
+  transition: 1000ms;
+}
 
 /*#Top-Navigation-Bar*/
 .nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
-  border-bottom: 1px solid $base-color;
   box-shadow: 2px 2px 5px $shadows;
   background-color: $base-color;
   //background-color: rgba($base-color, 0.6);
@@ -56,6 +61,7 @@
 
   li {
     display: none;
+    border-radius: 5px;
   }
   li:first-child {
     margin-right: auto;
@@ -72,9 +78,12 @@
     line-height: 40px;
     padding: 7px 10px;
   }
-
+ 
 }
-
+.nav-menu li:hover:not(:first-child), #footer li:hover{
+  background-color: rgba($third-color, $alpha: 1.0);
+  transition: 1000ms;
+}
 #nav-checkbox:checked ~ ul.nav-menu li {
   display: block;
 }
@@ -94,7 +103,6 @@
   margin-top: 1em;
   padding-bottom: 0;
   background-color: $base-color;
-  //background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
   box-shadow: 0 -2px 5px $shadows;
 }
@@ -115,6 +123,25 @@
   align-items: center;
   line-height: 18px;
 }
+#footer .footer-links {
+  @include reset-list;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5px;
+  li{
+    border-radius: 5px;
+  }
+  a{
+    color: $font-color-light;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 40px;
+    padding: 0px 10px;
+  }
+}
+
 
 @media only screen and (min-width: 1024px) {
   /*#Top-Navigation-Bar*/
@@ -143,6 +170,8 @@
 
   #footer .footer-logo {
     width: 180px;
+    margin-top: 15px;
   }
+  
 
 }

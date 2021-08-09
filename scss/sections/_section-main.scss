@@ -1,4 +1,3 @@
-@import "../base";
 
 #section-main {
   min-height: 100vh;
@@ -22,5 +21,14 @@
     font-size: 42px;
     color: $font-color-light;
     text-shadow: 2px 2px 5px $shadows;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .content-wrapper {
+    padding: 0 50px;
+    .content-title {
+      padding-top: 280px;
+      font-size: 60px;
+    }
   }
 }

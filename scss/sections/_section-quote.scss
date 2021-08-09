@@ -1,0 +1,31 @@
+#section-quote{
+    margin-top: 25px;
+    height: 250px;
+    h1{
+        font-style: italic;
+        font-weight: lighter;
+        color: $font-color-light;
+        padding-top: 70px;
+        text-shadow: 1px 1px 5px $shadows;
+    }
+    h3{
+        color: $font-color-light;
+        padding-top: 15px;
+    }
+}
+.quote-box{
+    height: 250px;
+    width: 100%;
+    background-color: rgba($shadows, $alpha: 0.4);
+    z-index: -1;
+}
+.quote-bg-img {
+    position: absolute;
+    background-image:  url("/img/quote-bg.jpg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+    z-index: -2;
+}

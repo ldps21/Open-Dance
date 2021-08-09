@@ -1,12 +1,11 @@
-@import "../base";
 
-.week-table{
+//.week-table{
     // background-image: url(/img/week-bg.jpg);
     // background-position: center;
     // background-repeat: repeat-y;
     // background-size: cover;
     // padding: 10px 0;
-}
+//}
 .daycard{
     margin: 10px;
     border-radius: 5px;
@@ -23,11 +22,12 @@
     .hour-style{
         font-size: 24px;
         color: $font-color-light;
-        background-color: rgba($third-color, $alpha: 0.9);
+        background-color: $third-color;
+        box-shadow: 0 2px 5px $shadows;
     }
     .aula-style{
         font-size: 20px;
-        font-family: "Maven Pro", sans-serif;
+        font-family: $secondary-font;
         font-weight: 500;
         text-shadow: 0px 0.5px 1px $shadows;
         height: 80px;

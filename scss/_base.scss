@@ -20,10 +20,12 @@ $secondary-font: "Maven Pro", sans-serif;
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: $primary-font;
   color: $font-color-dark;
-  //background-color: #f3f3f3;
   text-align: center;
 }
 img {
@@ -34,9 +36,18 @@ img {
 .section-title {
   h1 {
     padding-top: 20px;
-    font-size: 32px;
+    font-size: 36px;
     font-style: italic;
     font-weight: bold;
     text-decoration: underline;
+  }
+  p{ 
+    font-size: 24px;
+    ;
+  }
+  .quote{
+    font-style: italic;
+    font-family: $secondary-font;
+    padding: 10px 15px;
   }
 }
