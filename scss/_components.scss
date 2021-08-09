@@ -80,7 +80,7 @@
   }
  
 }
-.nav-menu li:hover:not(:first-child), #footer li:hover{
+.nav-menu li:hover:not(:first-child , :last-child), #footer li:hover{
   background-color: rgba($third-color, $alpha: 1.0);
   transition: 1000ms;
 }

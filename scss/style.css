@@ -141,7 +141,7 @@ img {
   padding: 7px 10px;
 }
 
-.nav-menu li:hover:not(:first-child), #footer li:hover {
+.nav-menu li:hover:not(:first-child, :last-child), #footer li:hover {
   background-color: #cf142b;
   -webkit-transition: 1000ms;
   transition: 1000ms;
