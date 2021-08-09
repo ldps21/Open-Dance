@@ -99,7 +99,7 @@
         </li>
         <li><a href="#section-aulas">Aulas</a></li>
         <li><a href="#section-horarios">Horarios</a></li>
-        <li><a href="#section-contact">Contatos</a></li>
+        <li><a href="#section-contact">Contactos</a></li>
       </ul>
     </nav>
     <section id="section-main" class="grid">
@@ -121,27 +121,28 @@
       </div>
       <ul class="aulas">
         <li>
-          <div class="card salsa-card"><a href="#section-horarios">Salsa</a></div>
+          <div class="card salsa-card">
+            <a href="#section-horarios" onclick="aulaHighlighting('salsa')">Salsa</a></div>
         </li>
         <li>
           <div class="card footwork-card">
-            <a href="#section-horarios"> Footwork </a>
+            <a href="#section-horarios" onclick="aulaHighlighting('footwork')">Footwork</a>
           </div>
         </li>
         <li>
-          <div class="card kizomba-card"><a href="#section-horarios">Kizomba</a></div>
+          <div class="card kizomba-card"><a href="#section-horarios" onclick="aulaHighlighting('kizomba')">Kizomba</a></div>
         </li>
         <li>
-          <div class="card rueda-card"><a href="#section-horarios">Rueda de casino</a></div>
+          <div class="card rueda-card"><a href="#section-contact">Rueda de casino</a></div>
         </li>
         <li>
           <div class="card aulas-privadas-card">
-            <a href="#section-contact">Aulas privadas</a>
+            <a href="#section-contact" onclick="aulasPrivadas()">Aulas privadas</a>
           </div>
         </li>
         <li>
           <div class="card noivos-card">
-            <a href="#section-contact">Coreografia para noivos</a>
+            <a href="#section-contact" onclick="aulasPrivadas()">Coreografia para noivos</a>
           </div>
         </li>
       </ul>
@@ -181,7 +182,7 @@
           <div class="aula-style salsa">Salsa iniciados</div>
         </div>
       </div>
-      <a href="#section-contact" class="button">Contatos</a>
+      <a href="#section-contact" class="button">Contactos</a>
     </section>
     <section id="section-quote">
       <div class="quote-box">
@@ -192,7 +193,7 @@
     </section>
     <section id="section-contact" class="grid">
       <div class="section-title section-title-contact">
-        <h1>Contatos</h1>
+        <h1>Contacte-nos</h1>
         
       </div>
       <div class="contact-grid">
@@ -204,7 +205,7 @@
             </li>
             <li>
               <h4>Email</h4>
-              <p>academiaopendancemadeira@gmail.com</p>
+              <p id="email">academiaopendancemadeira@gmail.com</p>
             </li>
             <li>
               <div class="sns-icons">
@@ -296,6 +297,7 @@
                     </g></svg
                 ></a>
                 <p>@opendancemadeira</p>
+                <p id="info-aulas-privadas">Para informações sobre aulas privadas não hesite em contactar-nos</p>
               </div>
             </li>
           </ul>
@@ -448,7 +450,7 @@
       <ul class="footer-links">
         <li><a href="#section-aulas">Aulas</a></li>
         <li><a href="#section-horarios">Horarios</a></li>
-        <li><a href="#section-contact">Contatos</a></li>
+        <li><a href="#section-contact">Contactos</a></li>
       </ul>
     </section>
   </body>

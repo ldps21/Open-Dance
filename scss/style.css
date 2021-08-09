@@ -635,6 +635,12 @@ img {
   padding: 0px 5px;
 }
 
+.contact-info #info-aulas-privadas {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
 #section-quote {
   margin-top: 25px;
   height: 250px;
