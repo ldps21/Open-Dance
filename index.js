@@ -15,5 +15,6 @@ function aulaHighlighting(string){
 	}
 }
 function aulasPrivadas(){
+    aulaReset();
     document.getElementById("info-aulas-privadas").style.textDecoration = 'underline 2px solid #00ffff';
 }
